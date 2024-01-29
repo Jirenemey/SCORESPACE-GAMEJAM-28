@@ -9,11 +9,13 @@ public class LevelChanger : MonoBehaviour {
 
 	public void FadeToGame ()
 	{
+		Time.timeScale = 1f;
 		FadeToLevel("Game");
 	}
 
     public void FadeToMenu()
     {
+		Time.timeScale = 1f;
         FadeToLevel("MainMenu");
     }
 
